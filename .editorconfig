@@ -26,9 +26,9 @@ charset = utf-8
 # Valores possíveis - true, false
 trim_trailing_whitespace = true
 
-[*.md]
-trim_trailing_whitespace = false
-
 # Denota se o arquivo deve terminar com uma nova linha
 # Valores possíveis - true, false
 insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
