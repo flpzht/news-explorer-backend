@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const validadtor = require('validator');
+const validator = require('validator');
 
 const articleSchema = new mongoose.Schema({
   keyword: {
@@ -26,16 +26,16 @@ const articleSchema = new mongoose.Schema({
     type: String,
     required: [true, 'O campo link é obrigatório'],
     validate: {
-      validator: (v) => validadtor.isURL(v),
-      message: '{VALUE} is not a valid URL',
+      validator: (v) => validator.isURL(v),
+      message: '{VALUE} não é uma URL válida',
     },
   },
   image: {
     type: String,
     required: [true, 'O campo image é obrigatório'],
     validate: {
-      validator: (v) => validadtor.isURL(v),
-      message: '{VALUE} is not a valid URL',
+      validator: (v) => validator.isURL(v),
+      message: '{VALUE} não é uma URL válida',
     },
   },
   owner: {
