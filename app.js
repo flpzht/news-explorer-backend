@@ -17,10 +17,8 @@ const {
 } = process.env;
 
 const allowedCors = [
-  'https://flp-news-explorer',
-  'https://www.flp-news-explorer',
+  'https://flp-news-explorer.verymad.net',
   'http://localhost:5173',
-  'http://localhost:3000',
 ];
 
 const limiter = rateLimit({
