@@ -11,7 +11,7 @@ const validateSignup = celebrate({
 const validateSignin = celebrate({
   [Segments.BODY]: Joi.object().keys({
     email: Joi.string().required().email(),
-    password: Joi.string().required().min(8),
+    password: Joi.string().required(),
   }),
 });
 
