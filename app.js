@@ -28,6 +28,8 @@ const limiter = rateLimit({
 
 const app = express();
 
+app.set('trust proxy', 1);
+
 mongoose.connect(MONGO_URL)
   .then(() => console.log('Conectado ao MongoDB'))
   .catch((err) => console.error('Erro ao conectar ao MongoDB:', err.message));
